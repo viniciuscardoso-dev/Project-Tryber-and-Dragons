@@ -1,8 +1,5 @@
 export default abstract class Race {   
-  private static raceCount = 0; 
-  constructor(private _name: string, private _dexterity: number) {
-    Race.raceCount += 1;
-  }
+  constructor(private _name: string, private _dexterity: number) {}
 
   public get name(): string {
     return this._name;
